@@ -26,7 +26,6 @@
     "prefer-const": "error",
     "eol-last": "error",
     "no-trailing-spaces": "error",
-    // "quotes": ["warn", "single", { "avoidEscape": true }],
     "linebreak-style": ["error", "unix"],
     "no-tabs": "error",
     "sort-imports-es6-autofix/sort-imports-es6": "error",
@@ -66,10 +65,7 @@
       }
     },
     {
-      "files": [
-        "commitlint.config.cjs",
-        ".prettierrc.cjs"
-      ],
+      "files": ["commitlint.config.cjs", ".prettierrc.cjs"],
       "env": {
         "node": true
       },

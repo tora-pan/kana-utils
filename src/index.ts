@@ -1,7 +1,3 @@
-type Test = {
-  first: string;
+export const initialCommit = (name: string): string => {
+  return `This is my first commit ${name}.`;
 };
-
-const name: Test = { first: "travis" };
-
-console.log(name);
