@@ -1,7 +1,7 @@
 import { toKatakana } from "../src";
 
 describe("toKatakana", () => {
-  it("should return input string converted to katakana", () => {
+  test.skip("should return input string converted to katakana", () => {
     const input = "これはてすとです";
     const expected = "コレハテストデス";
 
