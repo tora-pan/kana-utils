@@ -4,10 +4,23 @@
  * @param str - A string of hiragana characters.
  */
 
+import { UNICODE_CONSTS } from "./kana-data";
+
 const toKatakana = (str: string): string => {
-  const katakana = str.replace("hiragana", "katakana");
-  //todo
-  return katakana;
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    const hiraCharCode = str[i].charCodeAt(0);
+    if (
+      !(
+        hiraCharCode >= UNICODE_CONSTS.HIRAGANA_START &&
+        hiraCharCode <= UNICODE_CONSTS.HIRAGANA_END
+      )
+    ) {
+      result += str[i];
+    }
+    result += String.fromCharCode(hiraCharCode + 96);
+  }
+  return result;
 };
 
 export default toKatakana;

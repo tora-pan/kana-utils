@@ -5,8 +5,10 @@
  * @param str - A string of Japanese text containing kanji characters.
  */
 
+import { REGEX_RANGES } from "./kana-data";
+
 const stripKanji = (str: string): string => {
-  return str.replace("kanji", "");
+  return str.split(REGEX_RANGES.KANJI).join("");
 };
 
 export default stripKanji;

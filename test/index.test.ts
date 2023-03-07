@@ -9,7 +9,7 @@ import {
   toKatakana,
 } from "../src";
 describe("index", () => {
-  test.skip("should bootstrap library modules", () => {
+  it("should bootstrap library modules", () => {
     expect(typeof normalizeText === "function").toBe(true);
     expect(typeof toFullWidthKata === "function").toBe(true);
     expect(typeof toHalfWidthKata === "function").toBe(true);

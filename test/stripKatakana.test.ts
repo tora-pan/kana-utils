@@ -1,12 +1,12 @@
 import { stripKatakana } from "../src";
 
-describe("normalizeText", () => {
-  test.skip("should return input string with all spaces and NWJ removed", () => {
+describe("stripKatakana", () => {
+  it("should return input string with all katakana removed", () => {
     const input = "これはテストです";
     const expected = "これはです";
 
     const result = stripKatakana(input);
 
-    expect(stripKatakana(result)).toEqual(expected);
+    expect(result).toEqual(expected);
   });
 });

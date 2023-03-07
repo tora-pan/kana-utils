@@ -1,12 +1,12 @@
 import { toFullWidthKata } from "../src";
 
 describe("toFullWidthKata", () => {
-  test.skip("should return input string converted to full width katakana", () => {
+  it("should return all full width katakana when given all half width katakana", () => {
     const expected = "コレハテストデス";
     const input = "ｺﾚﾊﾃｽﾄﾃﾞｽ";
 
     const result = toFullWidthKata(input);
 
-    expect(toFullWidthKata(result)).toEqual(expected);
+    expect(result).toEqual(expected);
   });
 });

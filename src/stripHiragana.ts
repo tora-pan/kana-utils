@@ -5,8 +5,11 @@
  * @param str - A string of Japanese text containing hiragana characters.
  */
 
+import { REGEX_RANGES } from "./kana-data";
+
 const stripHiragana = (str: string): string => {
-  return str.replace("hiragana", "");
+  const hiragana = REGEX_RANGES.HIRAGANA;
+  return str.split(hiragana).join("");
 };
 
 export default stripHiragana;

@@ -1,12 +1,12 @@
-import { toHiragana } from "../src";
+import { normalizeText } from "../src";
 
 describe("normalizeText", () => {
-  test.skip("should return input string with all spaces and NWJ removed", () => {
-    const input = "こ‍れ‍はテ‍ス ト　です";
+  it("should return input string with all spaces and NWJ removed", () => {
+    const input = "これはテ‍ス ト　です";
     const expected = "これはテストです";
 
-    const result = toHiragana(input);
+    const result = normalizeText(input);
 
-    expect(toHiragana(result)).toEqual(expected);
+    expect(result).toEqual(expected);
   });
 });
