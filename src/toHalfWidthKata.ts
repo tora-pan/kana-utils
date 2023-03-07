@@ -5,7 +5,7 @@
  * @param str - A string of hiragana or katakana characters.
  */
 const toHalfWidthKata = (str: string): string => {
-  const hwKata = "";
+  const hwKata = str.replace("half", "full");
   //todo
   return hwKata;
 };

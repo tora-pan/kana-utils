@@ -5,7 +5,7 @@
  */
 
 const toHiragana = (str: string): string => {
-  const hiragana = "";
+  const hiragana = str.replace("katakana", "hiragana");
   //todo
   return hiragana;
 };
