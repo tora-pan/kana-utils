@@ -12,7 +12,7 @@
     "webextensions": true
   },
   "plugins": ["import", "eslint-plugin-tsdoc", "sort-imports-es6-autofix"],
-  "ignorePatterns": ["dist"],
+  "ignorePatterns": ["build"],
   "settings": {
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
